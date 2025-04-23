@@ -1,0 +1,20 @@
+{
+    "name": "playwright-automation",
+    "version": "1.0.0",
+    "scripts": {
+      "test": "playwright test",
+      "test:headed": "playwright test --headed",
+      "test:debug": "playwright test --debug",
+      "test:smoke": "playwright test --grep @smoke",
+      "test:report": "playwright show-report",
+      "test:chromium": "npx playwright test --project=chromium",
+      "test:webkit": "npx playwright test --project=webkit",
+      "test:ios": "npx playwright test --project=ios",
+      "test:android": "npx playwright test --project=android",
+      "test:all-browsers": "npm run test:chromium && npm run test:webkit && npm run test:ios && npm run test:android",
+      "playwright": "npx playwright"
+    },
+    "devDependencies": {
+      "@playwright/test": "^1.42.1"
+    }
+  }
