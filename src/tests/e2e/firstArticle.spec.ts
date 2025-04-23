@@ -4,10 +4,6 @@ import { expect } from "@playwright/test";
 test.describe('First Article Validation', () => {
     test('should be visible with valid title', async ({ homePage }) => {
       await homePage.verifyFirstArticle();
-      
-      // Optional: Print the title for debugging
-      const title = await homePage.getFirstArticleTitle();
-      console.log('First article title:', title);
     });
   
     test('should match expected pattern', async ({ homePage }) => {
