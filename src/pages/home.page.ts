@@ -25,7 +25,6 @@ export class HomePage {
 
   async navigate() {
     await this.page.goto('/');
-    await this.page.waitForLoadState('networkidle');
     await this.page.waitForTimeout(2000);
   }
 
