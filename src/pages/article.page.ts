@@ -23,7 +23,7 @@ export class ArticlePage {
 
   async navigateToArticle() {
     await this.page.goto(this.articlePath);
-    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForTimeout(2000);
   }
   
   async verifyArticleTitle() {
