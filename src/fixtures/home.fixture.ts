@@ -1,4 +1,4 @@
-import { HomePage } from '../pages/homePage';
+import { HomePage } from '../pages/home.page';
 import { test as baseTest, expect } from "@playwright/test";
 
 type FailedRequest = {
