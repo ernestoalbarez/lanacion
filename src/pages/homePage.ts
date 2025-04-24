@@ -23,6 +23,12 @@ export class HomePage {
     this.firstArticleLink = this.firstArticle.locator('a.ln-link');
   }
 
+  async navigate() {
+    await this.page.goto('/');
+    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForTimeout(2000);
+  }
+
   async verifyHeader() {
     await expect(this.logoLink).toBeVisible();
     await expect(this.logoSvg).toBeVisible();
