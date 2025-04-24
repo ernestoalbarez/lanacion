@@ -1,5 +1,4 @@
-import { test, expect } from "../../fixtures/article.fixture";
-import { ArticlePage } from "../../pages/article.page";
+import { test } from "../../fixtures/article.fixture";
 
 test.describe('LA NACION Article Page', () => {
   test.use({
