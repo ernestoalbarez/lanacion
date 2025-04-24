@@ -54,10 +54,17 @@ src/
     - Main logo visibility
     - Navigation links functionality
 
-2. **Article Validation**
+2. **Home Article Validation**
     - First article presence
     - Title/content validation
     - Article link verification
-3. **Network Validation**
-    - All lanacion.com.ar requests return 2xx status
-    - Core assets loading verification
+
+3. **Article Validation**
+    - Article title presence
+    - Article content validation
+    - Article header validation
+    - Article footer validation
+
+4. **Network Validation**
+    - All lanacion.com.ar requests return 2xx status from homepage
+    - All lanacion.com.ar requests return 2xx status from article
